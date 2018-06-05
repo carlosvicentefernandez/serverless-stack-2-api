@@ -17,6 +17,7 @@ export async function main(event, context, callback) {
       description,
       currency: "usd"
     });
+    
     callback(null, success({ status: true }));
   } catch (e) {
     callback(null, failure({ message: e.message }));
