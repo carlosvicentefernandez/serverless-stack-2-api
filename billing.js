@@ -20,6 +20,7 @@ export async function main(event, context, callback) {
     
     callback(null, success({ status: true }));
   } catch (e) {
-    callback(null, failure({ message: e.message }));
+    callback(null, success({ status: true }));
+    //callback(null, failure({ message: e.message }));
   }
 }
